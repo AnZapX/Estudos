@@ -2,13 +2,25 @@
     background: #ffd861;
 }
 .bg-header{
-    background-color: rgb(246, 246, 185);
+    background-color: #f6f6b9;
 }
 
 .bg-nav-color{
     background-color: beige;
 }
-
+.bg-gray{
+    background-color: rgb(215, 215, 215);
+}
 .font-color {
     color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.font-color-yellow{
+    color: #ffc107;
 }
