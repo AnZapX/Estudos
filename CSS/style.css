@@ -24,3 +24,38 @@ body {
 .font-color-yellow{
     color: #ffc107;
 }
+
+.custom-button {
+    background-color: white;
+    color: #fbc82e;
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #fbc82e;
+    color: white;
+}
+
+.custom-button2 {
+    background-color: #ffcb2e;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.custom-button2:hover {
+    background-color: #f2c130;
+    color: white;
+}
+
+button{
+    border: none;
+}
+
+.sendBtn{
+    background-color: #d0a350;
+}
+
+.bg-sendDuv{
+    background-color: #d3b57f;
+    border: none;
+}
