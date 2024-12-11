@@ -22,7 +22,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a class="navbar-brand" href="teste.html">ASZ</a>
+                <a class="navbar-brand" href="teste.php">ASZ</a>
             </div>
         </div>
 
@@ -56,10 +56,10 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav col-md-9">
                     <li class="nav-item ">
-                        <a class="nav-link active " aria-current="page" href="index.html">INÍCIO</a>
+                        <a class="nav-link active " aria-current="page" href="index.php">INÍCIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Dev.html">O DESENVOLVEDOR</a>
+                        <a class="nav-link active" aria-current="page" href="Dev.php">O DESENVOLVEDOR</a>
                     </li>
                     <li class="nav-item">
                         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -78,17 +78,17 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="PerguntasFreq.html"><b>PERGUNTAS
+                        <a class="nav-link active" aria-current="page" href="PerguntasFreq.php"><b>PERGUNTAS
                                 FREQUENTES</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="CirurgiaSeg.html">CIRURGIA SEGURA</a>
+                        <a class="nav-link active" aria-current="page" href="CirurgiaSeg.php">CIRURGIA SEGURA</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="FaleConosco.html">FALE CONOSCO</a>
+                        <a class="nav-link active" aria-current="page" href="FaleConosco.php">FALE CONOSCO</a>
                     </li>
                 </ul>
             </div>
@@ -97,9 +97,9 @@
 
     <div>
         <b>
-            <p class="fs-3 text-center text-warning pb-0 pt-5">Cirurgia Plástiva natural, muito além da estética</p>
+            <p class="fs-3 text-center text-warning pb-0 pt-5">Desenvolvimento e criação</p>
         </b>
-        <p class="fs-4 text-center">Conheça os tipos de procedimentos realizados pelo <b>Dr. Mário Junqueira</b></p>
+        <p class="fs-4 text-center">Conheça os tipos de serviços realizados pelo <b>Andreas Zapalá</b></p>
     </div>
 
 
@@ -153,19 +153,20 @@
         <div class="row d-flex justify-content-start">
             <div class="col-md-6">
                 <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo">
-                    Clique para expandir/fechar
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo">
+                    Dúvidas
                 </button>
-            
+                
                 <!-- Conteúdo que será ocultado ou expandido -->
                 <div id="conteudo" class="collapse mb-2">
                     <div class="card card-body">
                         Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
                     </div>
                 </div>  
+                <hr>
                 <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo2">
-                    Clique para expandir/fechar
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo2">
+                    Dúvidas
                 </button>
             
                 <!-- Conteúdo que será ocultado ou expandido -->
@@ -174,90 +175,98 @@
                         Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
                     </div>
                 </div>
+                <hr>
                 <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo">
-                    Clique para expandir/fechar
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo3">
+                    Dúvidas
                 </button>
             
                 <!-- Conteúdo que será ocultado ou expandido -->
-                <div id="conteudo" class="collapse mb-2">
+                <div id="conteudo3" class="collapse mb-2">
                     <div class="card card-body">
                         Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
                     </div>
                 </div>  
+                <hr>
                 <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo2">
-                    Clique para expandir/fechar
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo4">
+                    Dúvidas
                 </button>
             
                 <!-- Conteúdo que será ocultado ou expandido -->
-                <div id="conteudo2" class="collapse mb-2">
+                <div id="conteudo4" class="collapse mb-2">
                     <div class="card card-body">
                         Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
                     </div>
                 </div>
+                <hr>
                 <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo">
-                    Clique para expandir/fechar
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo5">
+                    Dúvidas
                 </button>
             
                 <!-- Conteúdo que será ocultado ou expandido -->
-                <div id="conteudo" class="collapse mb-2">
+                <div id="conteudo5" class="collapse mb-2">
                     <div class="card card-body">
                         Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
                     </div>
-                </div>  
+                </div> 
+                <hr>
                 <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo2">
-                    Clique para expandir/fechar
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo6">
+                    Dúvidas
                 </button>
             
                 <!-- Conteúdo que será ocultado ou expandido -->
-                <div id="conteudo2" class="collapse mb-2">
-                    <div class="card card-body">
-                        Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
-                    </div>
-                </div>
-                <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo">
-                    Clique para expandir/fechar
-                </button>
-            
-                <!-- Conteúdo que será ocultado ou expandido -->
-                <div id="conteudo" class="collapse mb-2">
-                    <div class="card card-body">
-                        Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
-                    </div>
-                </div>  
-                <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo2">
-                    Clique para expandir/fechar
-                </button>
-            
-                <!-- Conteúdo que será ocultado ou expandido -->
-                <div id="conteudo2" class="collapse mb-2">
+                <div id="conteudo6" class="collapse mb-2">
                     <div class="card card-body">
                         Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
                     </div>
                 </div>
+                <hr>
                 <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo">
-                    Clique para expandir/fechar
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo7">
+                    Dúvidas
                 </button>
             
                 <!-- Conteúdo que será ocultado ou expandido -->
-                <div id="conteudo" class="collapse mb-2">
+                <div id="conteudo7" class="collapse mb-2">
                     <div class="card card-body">
                         Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
                     </div>
                 </div>  
+                <hr>
                 <!-- Botão para controlar o Collapse -->
-                <button class="fs-3 text-warning mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo2">
-                    Clique para expandir/fechar
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo8">
+                    Dúvidas
                 </button>
             
                 <!-- Conteúdo que será ocultado ou expandido -->
-                <div id="conteudo2" class="collapse mb-2">
+                <div id="conteudo8" class="collapse mb-2">
+                    <div class="card card-body">
+                        Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
+                    </div>
+                </div>
+                <hr>
+                <!-- Botão para controlar o Collapse -->
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo9">
+                    Dúvidas
+                </button>
+            
+                <!-- Conteúdo que será ocultado ou expandido -->
+                <div id="conteudo9" class="collapse mb-2">
+                    <div class="card card-body">
+                        Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
+                    </div>
+                </div>  
+                <hr>
+                <!-- Botão para controlar o Collapse -->
+                <button class="fs-3 font-color-yellow mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo10">
+                    Dúvidas
+                </button>
+            
+                <!-- Conteúdo que será ocultado ou expandido -->
+                <div id="conteudo10" class="collapse mb-2">
                     <div class="card card-body">
                         Este é o conteúdo oculto do painel. Você pode adicionar qualquer conteúdo aqui, como texto, imagens, links, etc.
                     </div>
@@ -267,8 +276,8 @@
             <div class="col-md-6">
                 <div class="container">
                     <div class="card p-4 bg-sendDuv">
-                        <h3 class="text-center mb-4">Ainda tem dúvidas</h3>
-                        <p class="text-center">Envie suas perguntas para o <strong>Dr. Mário Junqueira</strong></p>
+                        <h3 class="text-center mb-4">Ainda tem dúvidas?</h3>
+                        <p class="text-center">Envie suas perguntas para o <strong>Andreas Zapalá</strong></p>
                         <form>
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="name" placeholder="Seu nome" required>

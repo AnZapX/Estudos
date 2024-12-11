@@ -23,12 +23,13 @@ body {
 
 .font-color-yellow{
     color: #ffc107;
+    background-color: white;
 }
 
 .custom-button {
     background-color: white;
     color: #fbc82e;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
 }
 
 .custom-button:hover {
@@ -39,7 +40,7 @@ body {
 .custom-button2 {
     background-color: #ffcb2e;
     color: white;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
 }
 
 .custom-button2:hover {

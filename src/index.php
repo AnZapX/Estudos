@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -21,7 +22,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a class="navbar-brand" href="teste.html">ASZ</a>
+        <a class="navbar-brand" href="teste.php">ASZ</a>
       </div>
     </div>
 
@@ -53,10 +54,10 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav col-md-9">
           <li class="nav-item ">
-            <a class="nav-link active " aria-current="page" href="index.html"><b>INÍCIO</b></a>
+            <a class="nav-link active " aria-current="page" href="index.php"><b>INÍCIO</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Dev.html">O DESENVOLVEDOR</a>
+            <a class="nav-link active" aria-current="page" href="Dev.php">O DESENVOLVEDOR</a>
           </li>
           <li class="nav-item">
             <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -75,16 +76,16 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="PerguntasFreq.html">PERGUNTAS FREQUENTES</a>
+            <a class="nav-link active" aria-current="page" href="PerguntasFreq.php">PERGUNTAS FREQUENTES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="CirurgiaSeg.html">CIRURGIA SEGURA</a>
+            <a class="nav-link active" aria-current="page" href="CirurgiaSeg.php">CIRURGIA SEGURA</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">BLOG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="FaleConosco.html">FALE CONOSCO</a>
+            <a class="nav-link active" aria-current="page" href="FaleConosco.php">FALE CONOSCO</a>
           </li>
         </ul>
       </div>
