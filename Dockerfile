@@ -1,11 +1,17 @@
-# Use uma imagem base com Apache e PHP
+# Usar a imagem oficial do PHP com Apache
 FROM php:8.2-apache
 
-# Instale extensões necessárias
+# Instalar dependências do PHP (exemplo: mysqli, pdo, etc.)
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Habilite o mod_rewrite do Apache (se necessário)
+# Copiar os arquivos do projeto para o diretório da aplicação no contêiner
+COPY ./src /var/www/html/
+
+# Copiar o arquivo de configuração customizado do PHP para o contêiner
+COPY ./php.ini /usr/local/etc/php/
+
+# Habilitar mod_rewrite do Apache (se necessário para seu projeto)
 RUN a2enmod rewrite
 
-# Copie o arquivo de configuração customizado (se existir)
-COPY php.ini /usr/local/etc/php/
+# Expor a porta 80
+EXPOSE 80
