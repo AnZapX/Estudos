@@ -1,5 +1,5 @@
 
-<?php require __DIR__ . "teste.php" ?>
+<?php require __DIR__ . "/teste.php" ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -373,31 +373,32 @@
   </div>
 
 
-
+  <form action="">
   <div class="container mb-4 mt-4">
     <div class="row">
       <div class="col-md-4">Agende agora para orçar um site com o <b>Andreas Zapalá</b></div>
       <div class="col-md-2">
         <div class="form-group mb-2">
-          <input type="text" class="form-control border-warning bg-light" id="inputPassword2" placeholder="Nome">
+          <input type="name" class="form-control border-warning bg-light"  id="nome" name="nome" placeholder="Nome">
         </div>
       </div>
       <div class="col-md-2">
         <div class="form-group mb-2">
-          <input type="text" class="form-control border-warning bg-light" id="inputPassword2" placeholder="E-mail">
+          <input type="email" class="form-control border-warning bg-light"  id="email" name="email" placeholder="E-mail">
         </div>
       </div>
       <div class="col-md-2">
         <div class="form-group mb-2">
-          <input type="text" class="form-control border-warning bg-light" id="inputPassword2" placeholder="Celular">
+          <input type="phone" class="form-control border-warning bg-light"  id="cel" name="cel" placeholder="Celular">
         </div>
       </div>
-
       <div class="col-md-2">
         <a href="#"><button type="button" class="btn btn-outline-warning">Enviar</button></a>
       </div>
     </div>
   </div>
+  </form>
+  
 
   <div class="container">
     <div class="row">
@@ -503,19 +504,20 @@
   </div>
 
     <div class="container mb-4 mt-4">
-      <form class="row g-3" method="post">
+      <form class="row g-3" action="NewsLetter.php" method="POST">
         <div class="col-auto">
           <p class="h3">Assine nossa Newsletter!</p>
           <p class="h5">Receba as novidades do Andreas e mantenha-se informado.</p>
         </div>
         <div class="col-auto">
           <label for="senmail" class="visually-hidden">Digite seu e-mail</label>
-          <input type="text" class="form-control" id="sendmail" placeholder="Digite seu e-mail" name="email">
+          <input type="email" class="form-control"  id="email" name="email" placeholder="Digite seu e-mail">
         </div>
         <div class="col-md-3 mb-2">
           <button type="submit" class="btn btn-primary mb-3">Enviar</button>
         </div>
       </div>
+      </form>
     </div>
   </div>
   <br>
