@@ -373,13 +373,13 @@
   </div>
 
 
-  <form action="">
+  <form action="teste.php" method="post">
   <div class="container mb-4 mt-4">
     <div class="row">
       <div class="col-md-4">Agende agora para orçar um site com o <b>Andreas Zapalá</b></div>
       <div class="col-md-2">
         <div class="form-group mb-2">
-          <input type="name" class="form-control border-warning bg-light"  id="nome" name="nome" placeholder="Nome">
+          <input type="name" class="form-control border-warning bg-light"  id="name" name="name" placeholder="Nome">
         </div>
       </div>
       <div class="col-md-2">
@@ -389,11 +389,11 @@
       </div>
       <div class="col-md-2">
         <div class="form-group mb-2">
-          <input type="phone" class="form-control border-warning bg-light"  id="cel" name="cel" placeholder="Celular">
+          <input type="text" class="form-control border-warning bg-light" id="celular" name="celular" placeholder="Celular">
         </div>
       </div>
       <div class="col-md-2">
-        <a href="#"><button type="button" class="btn btn-outline-warning">Enviar</button></a>
+        <button type="submit" class="btn btn-outline-warning">Enviar</button>
       </div>
     </div>
   </div>
@@ -545,5 +545,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+  <script>
+    $('#celular').mask('(00) 00000-0000');
+  </script>
 </body>
 </html>

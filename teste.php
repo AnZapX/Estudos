@@ -54,44 +54,43 @@ class Mailer {
 
                 $mail->Host       = 'smtp.gmail.com';                     // Servidor SMTP
                 $mail->SMTPAuth   = true;                                   // Ativar autenticação SMTP
-                // $mail->Username   = 'andreaszapala98@gmail.com';               // Usuário SMTP
+                $mail->Username   = 'andreaszapala98@gmail.com';               // Usuário SMTP
                 $mail->Password   = 'jbun fndl aocb obzp';                           // Senha SMTP
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Ativar criptografia TLS
                 $mail->Port       = 587;                                    // Porta SMTP
             
                 // Remetente e destinatário
-                $mail->setFrom('andreaszapala98@gmail.com', "Andreas Zapalá");
                 $mail->addAddress('andreaszapala98@gmail.com', "Andreas Zapalá");
-                $mail->addAddress($this->email, /*$this->name*/);
+                $mail->addAddress($this->email, $this->name);
                 
                 // Conteúdo do e-mail
                 $mail->isHTML(true);
-                $mail->Subject = 'Cadastro do NewsLetter'; // Assunto simples
+                $mail->Subject = 'Agendamento do ' . $this->name; // Assunto simples
                 $mail->CharSet = 'UTF-8'; 
-                $mail->Body    = 'O E-mail: <b>' . $this->email . '</b>  com o nome <b>'/* . $this->name*/ . '</b> deseja ser cadastrado no Newsletter!';
+                $mail->Body    = 'O cliente <b>' . $this->name . '</b> Solicita uma ligação!<br>Telefone: <b>' . $this->phone . '</b><br>O E-Mail: <b>' . $this->email;
             
                 // Enviar e-mail
                 $mail->send();
+                
                 echo '<script>alert("E-mail enviado com sucesso!");</script>';
-                //echo '<script>history.go(-1);</script>';
+                echo '<script>history.go(-1);</script>';
             } catch (Exception $e) {
                 echo "Erro ao enviar e-mail: {$mail->ErrorInfo}";
             }
         }
     }
     
-    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone'])) {
+    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['celular'])) {
         // Sanitiza o valor do campo 'email'
         $name = filter_input(INPUT_POST, 'name', FILTER_DEFAULT);
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-        $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_EMAIL);
-
+        $phone = filter_input(INPUT_POST, 'celular', FILTER_DEFAULT);
+        
         $usuario = new Mailer( $name, $email, $phone);
         $usuario->sendMail();
     }else{
         echo "<script>Erro! Preencha todos os campos ou tente mais tarde.</script>";
-        //echo '<script>history.go(-1);</script>';
+        echo '<script>history.go(-1);</script>';
         //die();
     }
-
 
