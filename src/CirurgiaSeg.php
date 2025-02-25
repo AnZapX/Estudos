@@ -8,7 +8,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="CSS/style.css">
-  <title>Desenvolvedor</title>
+  <title>Cirurgia Segura</title>
 </head>
 <body>
   <header class="navbar navbar-expand-lg bg-header fixed-top">
@@ -147,20 +147,20 @@
     </div>
   
     <div class="container mb-4 mt-4">
-      <form class="row g-3" action="NewsLetter.php" method="post">
+      <form class="row g-3" action="/NewsLetter.php" method="POST">
         <div class="col-auto">
           <p class="h3">Assine nossa Newsletter!</p>
           <p class="h5">Receba as novidades do Andreas e mantenha-se informado.</p>
         </div>
         <div class="col-auto">
           <label for="senmail" class="visually-hidden">Digite seu e-mail</label>
-          <input type="text" class="form-control" id="sendmail" name="mail" placeholder="Digite seu e-mail">
+          <input type="email" class="form-control"  id="email" name="email" placeholder="Digite seu e-mail">
         </div>
         <div class="col-md-3 mb-2">
           <button type="submit" class="btn btn-primary mb-3">Enviar</button>
         </div>
-      </form>
       </div>
+      </form>
     </div>
   </div>
   

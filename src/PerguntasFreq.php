@@ -280,16 +280,16 @@
                         <p class="text-center">Envie suas perguntas para o <strong>Andreas Zapalá</strong></p>
                         <form>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+                                <input type="text" class="form-control" id="name" placeholder="Seu nome">
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+                                <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" id="phone" placeholder="Seu telefone" required>
+                                <input type="tel" class="form-control" id="phone" placeholder="Seu telefone">
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" id="doubt" rows="3" placeholder="Digite sua dúvida" required></textarea>
+                                <textarea class="form-control" id="doubt" rows="3" placeholder="Digite sua dúvida"></textarea>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn w-100 sendBtn">ENVIAR DÚVIDA</button>
@@ -301,18 +301,18 @@
                     <div class="card p-4">
                         
                         <p class="text-center"><b>Solicite uma ligação!</b> Assim que recebermos seu contato, ligaremos para você</p>
-                        <form>
+                        <form action="/Agendamento.php" method="post">
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Seu nome *" required>
+                            <input type="name" class="form-control border-warning bg-light"  id="name" name="name" placeholder="Nome">
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Seu e-mail *" required>
+                            <input type="email" class="form-control border-warning bg-light"  id="email" name="email" placeholder="E-mail">
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" id="phone" placeholder="Seu telefone *" required>
+                            <input type="text" class="form-control border-warning bg-light" id="celular" name="celular" placeholder="Celular">
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn w-100 sendBtn">ENVIAR DÚVIDA</button>
+                                <button type="submit" class="btn btn w-100 sendBtn">SOLICITAR LIGAÇÃO</button>
                             </div>
                         </form>
                     </div>
@@ -324,20 +324,20 @@
     
     <hr>
     <div class="container mb-4 mt-4">
-      <form class="row g-3" action="NewsLetter.php" method="post">
+      <form class="row g-3" action="/NewsLetter.php" method="POST">
         <div class="col-auto">
           <p class="h3">Assine nossa Newsletter!</p>
           <p class="h5">Receba as novidades do Andreas e mantenha-se informado.</p>
         </div>
         <div class="col-auto">
           <label for="senmail" class="visually-hidden">Digite seu e-mail</label>
-          <input type="text" class="form-control" id="sendmail" name="mail" placeholder="Digite seu e-mail">
+          <input type="email" class="form-control"  id="email" name="email" placeholder="Digite seu e-mail">
         </div>
         <div class="col-md-3 mb-2">
           <button type="submit" class="btn btn-primary mb-3">Enviar</button>
         </div>
-      </form>
       </div>
+      </form>
     </div>
   </div>
 
@@ -363,5 +363,10 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="src\JS\script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+  <script>
+    $('#celular').mask('(00) 00000-0000');
+  </script>
 </body>
 </html>

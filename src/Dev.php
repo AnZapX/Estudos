@@ -187,30 +187,31 @@
   
   
   
-    <div class="container mb-4 mt-4">
-      <div class="row">
-        <div class="col-md-4">Agende agora para orçar um site com o <b>Andreas Zapalá</b></div>
-        <div class="col-md-2">
-          <div class="form-group mb-2">
-            <input type="text" class="form-control border-warning bg-light" id="inputPassword2" placeholder="Nome">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="form-group mb-2">
-            <input type="text" class="form-control border-warning bg-light" id="inputPassword2" placeholder="E-mail">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="form-group mb-2">
-            <input type="text" class="form-control border-warning bg-light" id="inputPassword2" placeholder="Celular">
-          </div>
-        </div>
-  
-        <div class="col-md-2">
-          <a href="#"><button type="button" class="btn btn-outline-warning">Enviar</button></a>
+    <form action="/Agendamento.php" method="post">
+  <div class="container mb-4 mt-4">
+    <div class="row">
+      <div class="col-md-4">Agende agora para orçar um site com o <b>Andreas Zapalá</b></div>
+      <div class="col-md-2">
+        <div class="form-group mb-2">
+          <input type="name" class="form-control border-warning bg-light"  id="name" name="name" placeholder="Nome">
         </div>
       </div>
+      <div class="col-md-2">
+        <div class="form-group mb-2">
+          <input type="email" class="form-control border-warning bg-light"  id="email" name="email" placeholder="E-mail">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group mb-2">
+          <input type="text" class="form-control border-warning bg-light" id="celular" name="celular" placeholder="Celular">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-outline-warning">Enviar</button>
+      </div>
     </div>
+  </div>
+  </form>
   
     <div class="container">
       <div class="row">
@@ -315,7 +316,7 @@
       </div>
   
       <div class="container mb-4 mt-4">
-      <form class="row g-3" action="NewsLetter.php" method="post">
+      <form class="row g-3" action="/NewsLetter.php" method="post">
         <div class="col-auto">
           <p class="h3">Assine nossa Newsletter!</p>
           <p class="h5">Receba as novidades do Andreas e mantenha-se informado.</p>
@@ -353,5 +354,10 @@
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="src\JS\script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+  <script>
+    $('#celular').mask('(00) 00000-0000');
+  </script>
 </body>
 </html>

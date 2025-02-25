@@ -1,6 +1,3 @@
-
-<?php require __DIR__ . "/teste.php" ?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -373,7 +370,7 @@
   </div>
 
 
-  <form action="teste.php" method="post">
+  <form action="/Agendamento.php" method="post">
   <div class="container mb-4 mt-4">
     <div class="row">
       <div class="col-md-4">Agende agora para orçar um site com o <b>Andreas Zapalá</b></div>

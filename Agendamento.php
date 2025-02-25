@@ -4,8 +4,6 @@ require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-
-
 class Mailer {
     // Propriedades privadas
     private $email;
@@ -67,7 +65,7 @@ class Mailer {
                 $mail->isHTML(true);
                 $mail->Subject = 'Agendamento do ' . $this->name; // Assunto simples
                 $mail->CharSet = 'UTF-8'; 
-                $mail->Body    = 'O cliente <b>' . $this->name . '</b> Solicita uma ligação!<br>Telefone: <b>' . $this->phone . '</b><br>O E-Mail: <b>' . $this->email;
+                $mail->Body    = 'O cliente <b>' . $this->name . '</b> solicitou um agendamento!<br>Telefone: <b>' . $this->phone . '</b><br>O E-Mail: <b>' . $this->email;
             
                 // Enviar e-mail
                 $mail->send();
